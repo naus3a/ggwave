@@ -1,5 +1,5 @@
 if (NOT EMSCRIPTEN)
 endif()
 
-add_subdirectory(imgui)
-add_subdirectory(ggsock)
+#add_subdirectory(imgui)
+#add_subdirectory(ggsock)

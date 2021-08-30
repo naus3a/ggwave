@@ -259,6 +259,7 @@ bool GGWave_mainLoop() {
                     fprintf(stderr, "Warning: slow processing, clearing queued audio buffer of %d bytes ...\n", SDL_GetQueuedAudioSize(g_devIdInp));
                     SDL_ClearQueuedAudio(g_devIdInp);
                 }
+                
             } else {
                 SDL_ClearQueuedAudio(g_devIdInp);
             }

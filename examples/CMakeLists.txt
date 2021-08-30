@@ -40,7 +40,7 @@ endif()
 
 # third-party
 
-add_subdirectory(third-party)
+#add_subdirectory(third-party)
 
 # helper libraries
 
@@ -71,7 +71,7 @@ if (GGWAVE_SUPPORT_SDL2)
 
     target_link_libraries(ggwave-common-sdl2 PRIVATE
         ggwave
-        imgui-sdl2
+        #imgui-sdl2
         ${SDL2_LIBRARIES}
         )
 endif()
@@ -98,10 +98,11 @@ if (GGWAVE_SUPPORT_SDL2)
 
         add_subdirectory(ggwave-rx)
         add_subdirectory(ggwave-cli)
+        add_subdirectory(ggwave-rx-once)
     endif()
 
-    add_subdirectory(waver)
-    add_subdirectory(spectrogram)
+    #add_subdirectory(waver)
+    #add_subdirectory(spectrogram)
 endif()
 
 install(TARGETS ggwave-common
